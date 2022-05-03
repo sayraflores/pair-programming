@@ -84,3 +84,9 @@ let text = "Things are good";
 let text2 = "Dogs eat ants";
 
 console.log(anagramChecker(text, text2));
+
+// MEDIUM (3) 
+
+function gcd(num1, num2) {
+    
+}
