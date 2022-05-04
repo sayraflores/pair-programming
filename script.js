@@ -86,7 +86,18 @@ let text2 = "Dogs eat ants";
 console.log(anagramChecker(text, text2));
 
 // MEDIUM (3) 
+// Write a function that tkaes in two numbers and determines the largest positive integer that divides the two numbers without a remainder.
 
 function gcd(num1, num2) {
-    
-}
+    while(num2) {
+      x = num2                 // x = 360                            // x = 336                         // x = 24
+      num2 = num1 % num2       // num2 = 336 % 360 = 336             // num2 = 360 % 336 = 24           // num2 = 336 % 24 = 0
+      num1 = x                 // num1 = 360                         // num1 = 336                      // num 1 = 0
+    }                          // num1 = 360 num2 = 336              // num1 = 336 num2 = 24            // num1 = 0 this stops the while loop
+    return x
+  }
+  
+  console.log(gcd(336, 360))
+  console.log(336 % 360)
+  console.log(360 % 336)
+
