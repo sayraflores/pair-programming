@@ -101,3 +101,16 @@ function gcd(num1, num2) {
   console.log(336 % 360)
   console.log(360 % 336)
 
+// HARD (1)
+function brackets(string) {
+    if (string.includes("(" && ")") || string.includes("{" && "}") || string.includes("[" && "]")) {
+        return true;
+    } else {
+        return false;
+    }
+}
+var random = "hello (I mean goodbye)";
+var random2 = "hello {sike}";
+var random3 = "hello [array]";
+var random4 = "hello"
+console.log(brackets(random4));
